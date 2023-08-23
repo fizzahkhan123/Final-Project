@@ -6,7 +6,7 @@ const createProduct = async (req, res) => {
   const { ProductName, ProductImage, ProductCategory, ProductPrice, ProductDescription } = req.body;
   
   try {
-    await connect(process.env.MONGO_URL);
+    await connect(process.env.MONGO_URI);
     // console.log("DB CONNECTED")
 
     const checkExist = await products.exists({ ProductName });
@@ -39,7 +39,7 @@ const createProduct = async (req, res) => {
 
 const getAllProducts = async (req, res) => {
   try {
-    await connect(process.env.MONGO_URL);
+    await connect(process.env.MONGO_URI);
     const Product = await products.find();
 
     res.json({
@@ -56,7 +56,7 @@ const getAllProducts = async (req, res) => {
 const getProductByName = async (req, res) => {
   const { Name } = req.body;
   try {
-    await connect(process.env.MONGO_URL);
+    await connect(process.env.MONGO_URI);
     const Product = await products.find({ ProductName: Name });
 
     res.json({
@@ -73,7 +73,7 @@ const deleteProduct = async (req, res) => {
   const {Id} = req.body;
 console.log("ran")
   try {
-    await connect(process.env.MONGO_URL);
+    await connect(process.env.MONGO_URI);
     const deletedProduct = await products.findByIdAndDelete(Id);
 
     if (!deletedProduct) {
@@ -103,7 +103,7 @@ const updateProduct = async (req, res) => {
     ProductCategory
   );
   try {
-    await connect(process.env.MONGO_URL);
+    await connect(process.env.MONGO_URI);
     // console.log("DB CONNECTED")
 
     const updateProduct = await products.exists({ update });

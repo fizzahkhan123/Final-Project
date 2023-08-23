@@ -30,7 +30,7 @@ const createCategory = async (req, res) => {
   } else {
     try {
       //console.log("body accuired:", req.body);
-      await connect(process.env.MONGO_URL);
+      await connect(process.env.MONGO_URI);
       const checkExisting = await Category.exists({ CategoryName });
       if (checkExisting) {
         res.status(400).json({

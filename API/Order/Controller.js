@@ -18,7 +18,7 @@ const createOrder = async (req, res) => {
 
     try {
 
-        await connect(process.env.MONGO_URL)
+        await connect(process.env.MONGO_URI)
 
         const CheckUser = await User.findOne({ email: customerEmail })
         //if email found, stop
@@ -47,7 +47,7 @@ const createOrder = async (req, res) => {
 const getOrders = async (req, res) => {
 
     try {
-        await connect(process.env.MONGO_URL)
+        await connect(process.env.MONGO_URI)
 
         const allOrders = await Orders.find()
 
