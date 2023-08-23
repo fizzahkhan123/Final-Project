@@ -1,0 +1,173 @@
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-heading {
+  color: #f00; /* Replace with your desired color for the heading */
+  font-weight: bold;
+}
+
+.price-tag {
+  color: rgb(235, 4, 74); /* Replace with your desired color for the price */
+}
+
+.price-tag {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+.main {
+  font-style: bold;
+  color: rgb(5, 7, 1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row2 {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: flex-start; /* Align items to the top */
+  flex-wrap: wrap;
+  margin-left: 5%;
+}
+
+.internalCard {
+  margin: 20px;
+  text-align: center;
+}
+
+.internalCard img {
+  height: 250px;
+  width: 250px;
+}
+
+.internalCard p {
+  margin-top: 10px;
+}
+
+.show-more-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.show-more-button button{
+  color: darkorange;
+  border: 0px;
+  background-color: transparent;
+}
+
+.header {
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-bottom: 60px;
+}
+
+.lining {
+  color:rgb(196, 121, 8);
+  
+}
+
+.footer {
+  background-color: #b37d0b;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer2{
+  background-color: black;
+color: gold;
+}
+
+.form-body *{
+  margin-top: 10px;
+  margin-bottom:10px
+}
+
+.tableActionColumn *{
+  margin: 10px
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  position: absolute;
+  top: 20%;
+  left:40%;
+  border: 2px solid #1b6ac5;
+  border-radius: 10px;
+  box-shadow: 0 8px 10px rgba(3, 92, 62, 0.856);
+}
+ 
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #125aace7;
+  border-radius: 60px;
+}
+.create-account-link:hover {
+  text-decoration: underline;
+}
+
+
+.signup-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  position: absolute;
+  top: 20%;
+  left:40%;
+  border: 1px solid #3328cfad;
+  border-radius: 60 px;
+  box-shadow: 0 8px 10px rgba(3, 83, 59, 0.685);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #0c2ad6;
+  border-radius: 10px;
+}
+
+.profile-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-left: 80px;
+  
+  display: flex;
+}
+
+.cart-icon{
+width: 30px;
+height: 30px;
+margin-bottom: -6px;
+margin-left: 3px;
+}
