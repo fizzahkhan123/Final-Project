@@ -61,6 +61,7 @@ const login = async (req, res) => {
       const decryptPassword = await compare(password, existingUser.password);
 
       if (email == existingUser.email && decryptPassword) {
+        console.log("JWT_SECRET", process.env.JWT_SECRET);
         const token = sign(
           {
             id: existingUser._id,

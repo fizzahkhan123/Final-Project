@@ -36,7 +36,7 @@ export default function Products() {
       <div className="row">
         {products.map((val, key) => (
           <div className="col-md-3 my-3" key={key}>
-            <Link className="text-decoration-none" to={`/products/${val.id}`}>
+            <Link className="text-decoration-none" to={`/products/${val._id}`}>
               <Card style={{ width: 250 }}>
                 <Card.Img
                   variant="top"

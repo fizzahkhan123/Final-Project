@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "../Components/Slider";
 import FooterBar from "../Components/FooterBar";
 import Product from "./Product1";
+import { useNavigate } from "react-router-dom";
 export default function Home() {
   const initialItems = [
     {
@@ -67,6 +68,16 @@ export default function Home() {
   ];
 
   const [showMore, setShowMore] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    console.log("Log", localStorage.key('username'));
+    if (localStorage.key('username') === null) {
+      navigate('/login');      
+      alert('Kindly log in');
+    }
+  }, [])
+  
 
   const handleShowMore = () => {
     setShowMore(true);

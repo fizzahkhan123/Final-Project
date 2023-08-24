@@ -53,12 +53,13 @@ const getAllProducts = async (req, res) => {
 };
 //api/getProductByName/product
 
-const getProductByName = async (req, res) => {
-  const { Name } = req.body;
+const getProductById = async (req, res) => {
+  const { id } = req.params;
   try {
+    console.log("param got", id);
     await connect(process.env.MONGO_URI);
-    const Product = await products.find({ ProductName: Name });
-
+    const Product = await products.find({ _id: id });
+    console.log('product', Product);
     res.json({
       Product: Product,
     });
@@ -140,7 +141,7 @@ const updateProduct = async (req, res) => {
 module.exports = {
   createProduct,
   getAllProducts,
-  getProductByName,
+  getProductById,
   deleteProduct,
   updateProduct,
 };
