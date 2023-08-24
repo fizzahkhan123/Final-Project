@@ -5,6 +5,12 @@ import { Table, Button, Modal, Form } from "react-bootstrap";
 export default function ProductTable() {
   const [data, setData] = useState([]);
 
+  useEffect(() => {
+    console.log("Data inserted", data);
+  
+  }, [data]);
+  
+
   const [showModal, setShowModal] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const [newProductName, setNewProductName] = useState("");
@@ -107,6 +113,7 @@ export default function ProductTable() {
       };
       createProduct(newProductName, newProductPrice, newProductCatogary, encodedImage);
       setData([...data, newItem]);
+      
     }
 
     setSelectedItem(null);
