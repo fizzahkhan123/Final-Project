@@ -9,7 +9,7 @@ const ProductSchema = new Schema({
   ProductDescription: {
     type: String,
     required: false,
-    unique: true
+    unique: false
   },
   ProductImage: {
     type: String,
