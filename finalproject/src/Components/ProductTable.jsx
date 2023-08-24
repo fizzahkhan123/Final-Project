@@ -6,8 +6,7 @@ export default function ProductTable() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    console.log("Data inserted", data);
-  
+    console.log("Product inserted", data);
   }, [data]);
   
 
@@ -105,11 +104,10 @@ export default function ProductTable() {
     } else {
       const newId = data.length > 0 ? data[data.length - 1].id + 1 : 1;
       const newItem = {
-        id: newId,
-        productName: newProductName,
-        productCategory: newProductCatogary,
-        productPrice: newProductPrice,
-        productImage: encodedImage,
+        ProductName: newProductName,
+        ProductCategory: newProductCatogary,
+        ProductPrice: newProductPrice,
+        ProductImage: encodedImage,
       };
       createProduct(newProductName, newProductPrice, newProductCatogary, encodedImage);
       setData([...data, newItem]);
