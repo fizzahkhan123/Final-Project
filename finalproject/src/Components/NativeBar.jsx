@@ -28,6 +28,9 @@ function NativeBar() {
             <Link className="nav-link" to="/products">
               Products
             </Link>
+            <Link className="nav-link" to="/admin">
+              Admin
+            </Link>
             {
                 localStorage.key("username") === "" || localStorage.key("username") === null ? <>
                     <Link className="nav-link" to="/login">

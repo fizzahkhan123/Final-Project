@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import axios from "axios";
-
+import Spinner from 'react-bootstrap/Spinner';
 
 
 export default function Products() {
@@ -32,6 +32,9 @@ export default function Products() {
         <p className="text-secondary">
           These are the products of your required category
         </p>
+        <div className="spinner-grow text-info">
+        <Spinner animation="border" variant="warning" />
+        </div>
       </div>
       <div className="row">
         {products.map((val, key) => (

@@ -23,7 +23,7 @@ export default function Home() {
 
   const additionalItems = [
     {
-      imageUrl: "src\\assets\\burger-cat.jpg",
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCLZyvjCldzINxJb2qxQelVjmPWs-nNejlIg&usqp=CAU",
       title: "Burger",
     },
     {
@@ -47,7 +47,7 @@ export default function Home() {
       title: "Pasta And Noodles",
     },
     {
-      imageUrl: "src\\assets\\sw-cat.png",
+      imageUrl: "https://i.pinimg.com/736x/b9/7d/cf/b97dcfd89426a8992852d1bf54d94c83.jpg",
       title: "Sandwich",
     },
     {

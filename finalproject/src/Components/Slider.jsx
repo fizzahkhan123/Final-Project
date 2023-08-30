@@ -6,7 +6,7 @@ function Slider() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://media.istockphoto.com/id/476391316/photo/4th-of-july-picnic.jpg?s=612x612&w=0&k=20&c=CNvWB8j2Kn8okKwyxWv-mzKd-GqnHKXxZGw244_2iz0="
+          src="https://png.pngtree.com/background/20230528/original/pngtree-variety-of-indian-food-is-served-on-a-table-picture-image_2778395.jpg"
           alt="First slide" height={500}
         />
         <Carousel.Caption>
@@ -21,7 +21,7 @@ function Slider() {
           alt="Second slide" height={500}
         />
         <Carousel.Caption>
-          <h5>Second slide label</h5>
+          <h5>FK FOOD DIARY</h5>
           <p>Providing Desi delights for your Apetite,Bringing You The Taste Of tradition</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -32,9 +32,9 @@ function Slider() {
           alt="Third slide"height={500}
         />
         <Carousel.Caption>
-          <h5>Third slide label</h5>
+          <h5>FK FOOD DIARY</h5>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          We Will Provide You A Vast Variety And Variations In Fast Foods.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
