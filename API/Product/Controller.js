@@ -56,10 +56,10 @@ const getAllProducts = async (req, res) => {
 const getProductById = async (req, res) => {
   const { id } = req.params;
   try {
-    console.log("param got", id);
+    // console.log("param got", id);
     await connect(process.env.MONGO_URI);
     const Product = await products.find({ _id: id });
-    console.log('product', Product);
+    // console.log('product', Product);
     res.json({
       Product: Product,
     });
