@@ -18,9 +18,14 @@ app.use(
     extended: true,
     limit: "35mb",
     parameterLimit: 50000,
-  })
+  })  //this is a limit of 35mb which is allowed to be  uploaded into the server for image
 );
-app.use(cors());
+app.use(cors({
+  origin: ["http://localhost:5173", "http://localhost:3500"],
+  credentials: true
+}));
+app.use(express.json()) // stringify me change karnay k liye ye karyngy json ko
+
 app.use("/api", CategoryRouter);
 app.use("/api", UserRouter);
 app.use("/api", ProductRouter);
