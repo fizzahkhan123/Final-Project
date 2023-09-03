@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 export default function Home() {
   const initialItems = [
     {
-      imageUrl: "src\\assets\\burger-cat.jpg",
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCLZyvjCldzINxJb2qxQelVjmPWs-nNejlIg&usqp=CAU",
       title: "Burger",
     },
     {

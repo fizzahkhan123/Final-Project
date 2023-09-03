@@ -17,7 +17,7 @@ function NativeBar() {
     <Navbar bg="light" expand="lg">
       <Container>
         <Link className="navbar-brand" to="/">
-          FK FOOD DIAR
+          FK FOOD DIARY
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
