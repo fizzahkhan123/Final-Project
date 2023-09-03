@@ -50,7 +50,7 @@ export default function Product() {
 
   useEffect(() => {
 
-    axios.get(`http://localhost:3500/api/products${productID}`)
+    axios.get(`/api/products${productID}`)
       .then((json) => setproduct(json.data));
   }, []);
 

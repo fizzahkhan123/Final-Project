@@ -45,7 +45,7 @@ const SignUp = () => {
   };
 
   const saveUserInDB = async (username, email, password) => {
-    const response = await axios.post("http://localhost:3500/api/signup", {
+    const response = await axios.post("/api/signup", {
       email: email,
       username: username,
       password: password,

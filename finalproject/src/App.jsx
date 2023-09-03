@@ -10,7 +10,7 @@ import SignUp from "./pages/SignUp";
 import CartItem from "./pages/CartItem";
 
 
-export const AppRoute= 'http://localhost:3500/'
+export const AppRoute= '/'
 //import CarouselImage from "./pages/CarouselImage";
 export default function App() {
  

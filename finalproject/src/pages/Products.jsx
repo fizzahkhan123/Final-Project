@@ -15,7 +15,7 @@ export default function Products() {
 
   function getProducts() {
     axios
-      .get(`http://localhost:3500/api/products`)
+      .get(`/api/products`)
       .then((json) => {
         setProducts(json.data.products);
         console.log(json.data);

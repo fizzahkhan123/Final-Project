@@ -23,7 +23,7 @@ const Login = () => {
     if (email === "" || password === "") {
       return;
     }
-    const response = await axios.post('api/login',{
+    const response = await axios.post('/api/login',{
       email,
       password
     });

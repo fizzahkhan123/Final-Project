@@ -37,7 +37,7 @@ export default function ProductTable() {
     productCategory,
     encodedImage
   ) => {
-    const response = await axios.post("http://localhost:3500/api/product", {
+    const response = await axios.post("/api/product", {
       ProductName : productName,
       ProductCategory: productCategory,
       ProductPrice: productPrice,
@@ -53,7 +53,7 @@ export default function ProductTable() {
   };
 
   const deleteProduct = async (param) => {
-    const response = await axios.delete("http://localhost:3500/api/product", {
+    const response = await axios.delete("/api/product", {
       params:{
         "id": param
       }
@@ -82,7 +82,7 @@ export default function ProductTable() {
 
   const getProducts = async () => {
     try {
-      const response = await axios.get("http://localhost:3500/api/products");
+      const response = await axios.get("/api/products");
 
       if (response.status === 200 || response.status === 201) {
         console.log("I have got items", response.data);
